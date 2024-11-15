@@ -1,0 +1,4 @@
+X = int(input().strip())
+age_difference = 25 - 10
+vignesh_age_when_charan_was_X = X - age_difference
+print(vignesh_age_when_charan_was_X)
