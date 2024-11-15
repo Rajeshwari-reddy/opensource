@@ -1,0 +1,10 @@
+N = int(input().strip())
+A = list(map(int, input().strip().split()))
+total_sum = sum(A)
+left_sum = 0
+B = []
+for i in range(N):
+    right_sum = total_sum - left_sum - A[i]
+    B.append(abs(left_sum - right_sum))
+    left_sum += A[i]
+print(" ".join(map(str, B)))
