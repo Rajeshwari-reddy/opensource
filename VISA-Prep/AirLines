@@ -1,0 +1,5 @@
+X, N = map(int, input().split())
+required_planes = (N + 99) // 100
+new_planes = max(0, required_planes - X)
+
+print(new_planes)
